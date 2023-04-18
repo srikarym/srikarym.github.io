@@ -64,7 +64,6 @@
             <br>
               <em>arXiv</em>, 2023 
             <br>
-            <br>
               <em>(* Equal Contribution)</em> 
             <br>
             <a href="javascript:toggleBlock('abs_arxiv_3_23')">abstract</a>
@@ -97,6 +96,53 @@
           </td>
         </tr> 
     
+    <!-- ms_thesis -->
+    <tr>
+          
+      <td style="padding:10px;width:100%;vertical-align:middle">
+        <a href='images/thesis.png'><img src='images/thesis.png' class="img_pub"></a>
+        <a href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf">
+          <papertitle>Are the proposed similarity metrics also a measure of functional similarity?</papertitle>
+        </a>
+        <br>
+        <strong>Manikanta Srikar Yellapragada</strong>
+        <br>
+          <em>Masters Thesis</em>, 2020 
+        <br>
+        <a href="javascript:toggleBlock('abs_thesis')">abstract</a>
+  /
+        <a href="javascript:toggleBlock('bib_thesis')">bibtex</a>
+  /
+        <a href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf">paper</a>
+        <div id="abs_thesis">
+          <p></p>
+          A recent body of work attempts to understand the behavior and training dynamics of neural
+            networks by analyzing intermediate representations and designing metrics to define the similarity
+            between those representations. We observe that the representations of the last layer could be
+            thought of as the functional output of the model up to that point. In this work, we investigate
+            if the similarity between these representations can be considered a stand-in for the similarity
+            of the networks’ output functions. This can have an impact for many downstream tasks, but
+            we specifically analyze it in the context of transfer learning. Consequently, we perform a series
+            of experiments to understand the relationship between the representational similarity and the
+            functional similarity of neural networks. We show in two ways that the leading metric for
+            representational similarity, CKA, does not bear a strict relationship with functional similarity
+          <p></p>
+        </div>
+        <div id="bib_thesis">
+          <break-spaces>
+            <p></p>
+            @misc{yellapragada2020proposed,
+              title={Are the proposed similarity metrics also a measure of functional similarity?}, <br>
+              author={Yellapragada, Manikanta Srikar}, <br>
+              journal={https://cs.nyu.edu/media/publications/Yellapragada\_\_Manikanta\_Srikar\_-\_MS\_Thesis.pdf}, <br>
+              year={2020}, <br>
+              publisher={New York University}
+            }
+            <p></p>
+          </break-spaces>
+        </div>
+      </td>
+    </tr>
     
     <!-- Pub1 -->
         <tr>
@@ -250,6 +296,8 @@ function toggleBlock(id) {
 <script>
 toggleBlock('abs_arxiv_3_23');
 toggleBlock('bib_arxiv_3_23');
+toggleBlock('abs_thesis');
+toggleBlock('bib_thesis');
 toggleBlock('abs_isbi');
 toggleBlock('bib_isbi');
 toggleBlock('abs_midl');

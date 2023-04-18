@@ -157,5 +157,5 @@ span.highlight {
   margin-bottom: 20px;
 }
 .bib {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
