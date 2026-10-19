@@ -9,6 +9,9 @@
     content="Srikar Yellapragada's personal website showcasing research, publications, and professional background.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
   <!-- Favicon in multiple formats for better compatibility -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -17,389 +20,398 @@
 </head>
 
 <body>
-  <header>
-    <h1>Srikar Yellapragada</h1>
-    <div class="profile-image-frame">
-      <img src="images/me.jpg" class="profile-image-content">
-    </div>
-    <nav>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#about">Srikar Yellapragada</a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <main>
     <!-- About Section -->
-    <section id="about">
-      <p>I am a PhD student in the Computer Science department at <a href="https://www.stonybrook.edu/" target="_blank"
-          rel="noopener noreferrer">Stony Brook University</a>, advised by <a
-          href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank" rel="noopener noreferrer">Dimitris
-          Samaras</a>. My research is focused on Generative models for Computer Vision. Before this, I was a Software
-        Engineer at <a href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer">Bloomberg
-          LP</a>, where our team built an ETL pipeline for the ingestion of third-party data.</p>
+    <section id="about" class="hero">
+      <div class="hero-photo">
+        <img src="images/me.jpg" alt="Srikar Yellapragada">
+      </div>
+      <div class="hero-text">
+        <h1>Srikar Yellapragada</h1>
+        <p class="tagline">PhD Student, Computer Science &middot; Stony Brook University</p>
 
-      <p>In 2020, I obtained my Master's in Computer Science from <a href="https://cims.nyu.edu/dynamic/"
-          target="_blank" rel="noopener noreferrer">NYU</a>, where I worked with <a href="https://kyunghyuncho.me/"
-          target="_blank" rel="noopener noreferrer">Kyunghyun Cho's</a> group on <a
-          href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf" target="_blank"
-          rel="noopener noreferrer">Similarity of Neural Networks</a>, and interned at <a
-          href="https://www.ibm.com/watson-health" target="_blank" rel="noopener noreferrer">IBM Watson Health</a>.</p>
+        <p>I am a PhD student in the Computer Science department at <a href="https://www.stonybrook.edu/"
+            target="_blank" rel="noopener noreferrer">Stony Brook University</a>, advised by <a
+            href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank" rel="noopener noreferrer">Dimitris
+            Samaras</a>. My research is focused on generative models for computer vision, particularly for generating
+          gigapixel histopathology images. Before this, I was a Software Engineer at <a
+            href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer">Bloomberg LP</a>,
+          where our team built an ETL pipeline for the ingestion of third-party data.</p>
 
-      <p>Previously, I obtained a B.Tech in Electrical Engineering from <a href="https://iith.ac.in/" target="_blank"
-          rel="noopener noreferrer">Indian Institute of Technology, Hyderabad</a>, where I worked with <a
-          href="https://people.iith.ac.in/sumohana/" target="_blank" rel="noopener noreferrer">Sumohana Channappayya</a>
-        on Image Processing. I interned at <a href="https://val.cds.iisc.ac.in/" target="_blank"
-          rel="noopener noreferrer">Video Analytics Lab, IISc Bangalore</a>.</p>
+        <p>In 2020, I obtained my Master's in Computer Science from <a href="https://cims.nyu.edu/dynamic/"
+            target="_blank" rel="noopener noreferrer">NYU</a>, where I worked with <a href="https://kyunghyuncho.me/"
+            target="_blank" rel="noopener noreferrer">Kyunghyun Cho's</a> group on <a
+            href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf"
+            target="_blank" rel="noopener noreferrer">Similarity of Neural Networks</a>, and interned at <a
+            href="https://www.ibm.com/watson-health" target="_blank" rel="noopener noreferrer">IBM Watson Health</a>.
+        </p>
 
-      <p>In my free time, I enjoy playing video games and reading fantasy novels. I'm a big fan of strategy games, such
-        as Dota 2 and Age of Empires 2.</p>
+        <p>Previously, I obtained a B.Tech in Electrical Engineering from <a href="https://iith.ac.in/"
+            target="_blank" rel="noopener noreferrer">Indian Institute of Technology, Hyderabad</a>, where I worked
+          with <a href="https://people.iith.ac.in/sumohana/" target="_blank" rel="noopener noreferrer">Sumohana
+            Channappayya</a> on Image Processing. I interned at <a href="https://val.cds.iisc.ac.in/"
+            target="_blank" rel="noopener noreferrer">Video Analytics Lab, IISc Bangalore</a>.</p>
 
-      <div class="social-links">
-        <a href="mailto:myellapragad@cs.stonybrook.edu">Email</a> |
-        <a href="https://drive.google.com/file/d/1bRniIjx6jSsSGMWd-BdiloO-gO9LbonH/view?usp=sharing" target="_blank"
-          rel="noopener noreferrer">CV</a> |
-        <a href="https://www.linkedin.com/in/srikarym/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-        <a href="https://scholar.google.com/citations?user=DVMnHboAAAAJ&hl=en" target="_blank"
-          rel="noopener noreferrer">Google Scholar</a> |
-        <a href="https://github.com/srikarym/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <p>In my free time, I enjoy playing video games and reading fantasy novels. I'm a big fan of strategy games,
+          such as Dota 2 and Age of Empires 2.</p>
+
+        <div class="social-links">
+          <a href="mailto:myellapragad@cs.stonybrook.edu">Email</a>
+          <a href="https://drive.google.com/file/d/1bRniIjx6jSsSGMWd-BdiloO-gO9LbonH/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer">CV</a>
+          <a href="https://scholar.google.com/citations?user=DVMnHboAAAAJ&hl=en" target="_blank"
+            rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://github.com/srikarym/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/srikarym/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
 
     <!-- News Section -->
     <section id="news">
       <h2>News</h2>
-      <ul>
-        <li><span class="highlight">[June 2025]</span> Pathology autoencoder paper has been accepted at MICCAI 2025.
+      <ul class="news">
+        <li class="new"><time>Sep 2026</time>
+          <span>BigCell has been accepted at NeurIPS 2026. Check out the
+            <a href="https://histodiffusion.github.io/docs/projects/bigcell/">project page</a>!</span>
         </li>
-        <li><span class="highlight">[May 2025]</span> We developed PixCell : A generative foundation model for digital
-          histopathology images.</li>
-        <li>[Feb 2025]</span> ZoomLDM has been accepted at CVPR 2025.</li>
-        <li><span>[Feb 2024]</span> Our large image generation research was accepted at CVPR 2024.</li>
-        <li>...</li>
-        <li><span>[Aug 2022]</span> Started my PhD at Stony Brook University.</li>
+        <li class="new"><time>Jun 2026</time>
+          <span>Gen-SIS won the <strong>Best Paper Award</strong> at the CVPR 2026 DataCV workshop.</span>
+        </li>
+        <li class="more">&hellip;</li>
+        <li><time>Aug 2022</time>
+          <span>Started my PhD at Stony Brook University.</span>
+        </li>
       </ul>
     </section>
 
     <!-- Publications Section -->
-    <a href=""></a>
     <section id="publications">
-      <h2>Publications / Pre-prints</h2>
+      <div class="section-head">
+        <h2>Publications</h2>
+        <span class="pub-note">* equal contribution</span>
+      </div>
 
-      <table style="width:100%; border:0; border-spacing:0; margin:auto;">
-        <tbody>
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a
-                href="https://histodiffusion.github.io/assets/images/pixcell_overview-22761ba38a029014e04c1d0c27825fae.png">
-                <img
-                  src="https://histodiffusion.github.io/assets/images/pixcell_overview-22761ba38a029014e04c1d0c27825fae.png"
-                  class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2506.05127">
-                <papertitle>PixCell: A generative foundation model for digital histopathology images</papertitle>
-              </a>
-              <br>
-              <strong>Srikar Yellapragada</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos</a>,
-              <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
-              <a href="https://kostino.github.io/">Kostas Triaridis</a>,
-              <a href="https://varunbelagali98.github.io/">Varun Belagali</a>,
-              <a href="https://saarthak-kapse.github.io/">Saarthak Kapse</a>,
-              <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
-              <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
-              <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a> ,
-              <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc">Tahsin Kurc</a>,
-              <a href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a>, <a
-                href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>, <a
-                href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>arXiv</em>, 2025
-              <br>
-              <a href="https://histodiffusion.github.io/docs/projects/pixcell/">Project Page</a>
-              <!-- <p>First generative foundation model for histopathology, open weights.</p> -->
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/bigcell.jpg"><img src="images/bigcell.jpg" alt="BigCell" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2610.14261">BigCell: Generating Gigapixel Whole-Slide
+              Images</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos</a>,
+            <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
+            <a href="https://kostino.github.io/">Kostas Triaridis</a>,
+            <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
+            Karen Bai,
+            <a href="https://sci.utah.edu/people/beatrice.knudsen.html">Beatrice Knudsen</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc">Tahsin Kurc</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a>,
+            <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">NeurIPS 2026</span></p>
+          <p class="pub-tldr">Generating gigapixel whole-slide images, up to 32,768 × 32,768 pixels.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2610.14261">Paper</a>
+            <a href="https://histodiffusion.github.io/docs/projects/bigcell/">Project Page</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a
-                href="https://histodiffusion.github.io/assets/images/ae_compression-31e85ed62cb28a4004209261483107ae.png">
-                <img
-                  src="https://histodiffusion.github.io/assets/images/ae_compression-31e85ed62cb28a4004209261483107ae.png"
-                  class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2503.11591">
-                <papertitle>Pathology Image Compression with Pre-trained Autoencoders</papertitle>
-              </a>
-              <br>
-              <strong>Srikar Yellapragada</strong>,
-              <a href="https://alexgraikos.github.io/">Alexandros Graikos</a>,
-              <a href="https://kostino.github.io/">Kostas Triaridis</a>,
-              <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
-              <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
-              <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
-              <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a> ,
-              <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
-              <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>MICCAI</em>, 2025
-              <br>
-              <a href="https://arxiv.org/abs/2503.11591">Paper</a> / <a
-                href="https://huggingface.co/collections/StonyBrook-CVLab/pathology-fine-tuned-aes-67d45f223a659ff2e3402dd0">Models</a>
-              <!-- <p>Multiscale diffusion model for histopathology and satellite imagery.</p> -->
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/pixcell.png"><img src="images/pixcell.png" alt="PixCell" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2506.05127">PixCell: A generative foundation model for
+              digital histopathology images</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada*</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>,
+            <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
+            <a href="https://kostino.github.io/">Kostas Triaridis</a>,
+            <a href="https://varunbelagali98.github.io/">Varun Belagali</a>,
+            <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
+            Karen Bai,
+            <a href="https://sci.utah.edu/people/beatrice.knudsen.html">Beatrice Knudsen</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc">Tahsin Kurc</a>,
+            <a href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">Under review</span></p>
+          <p class="pub-tldr">First generative foundation model for histopathology, with open weights.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2506.05127">Paper</a>
+            <a href="https://histodiffusion.github.io/docs/projects/pixcell/">Project Page</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/cvpr_25.png">
-                <img src="images/cvpr_25.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2501.04784">
-                <papertitle>ZoomLDM: Latent Diffusion Model for multi-scale image generation</papertitle>
-              </a>
-              <br>
-              <strong>Srikar Yellapragada*</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>,
-              <a href="https://kostino.github.io/">Kostas Triaridis</a>, <a
-                href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a> ,<a
-                href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a>, <a
-                href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>, <a
-                href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>CVPR</em>, 2025
-              <br>
-              <a href="https://arxiv.org/abs/2411.16969">Paper</a> / <a
-                href="https://histodiffusion.github.io/pages/zoomldm_large_images/large_images.html">Large image
-                viewer</a>
-              <p>Multiscale diffusion model for histopathology and satellite imagery.</p>
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/cvpr_25.png"><img src="images/cvpr_25.png" alt="ZoomLDM" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2411.16969">ZoomLDM: Latent Diffusion Model for
+              multi-scale image generation</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada*</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>,
+            <a href="https://kostino.github.io/">Kostas Triaridis</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">CVPR 2025</span></p>
+          <p class="pub-tldr">Multiscale diffusion model for histopathology and satellite imagery.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2411.16969">Paper</a>
+            <a href="https://histodiffusion.github.io/pages/zoomldm_large_images/large_images.html">Large Image
+              Viewer</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/icassp.png">
-                <img src="images/icassp.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2501.04784">
-                <papertitle>Leveraging Registers in Vision Transformers for Robust Adaptation</papertitle>
-              </a>
-              <br>
-              <strong>Srikar Yellapragada</strong>, <a href="https://kowshikthopalli.github.io/">Kowshik Thopalli</a> ,
-              <a href="https://vivsivaraman.github.io/">Vivek Narayanaswamy</a>, <a
-                href="https://www.linkedin.com/in/wesamsakla">Wesam Sakla</a>, Yang Liu, <a
-                href="https://www.linkedin.com/in/yamen-mubarka/">Yamen Mubarka</a>, <a
-                href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a> , <a
-                href="https://jjthiagarajan.com/">Jayaraman J. Thiagarajan</a>
-              <br>
-              <em>ICASSP</em>, 2025
-              <br>
-              <a href="https://arxiv.org/abs/2501.04784">Paper</a>
-              <p>Registers make ViTs robust</p>
-            </td>
-          </tr>
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/large_img.png">
-                <img src="images/large_img.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2312.07330">
-                <papertitle>Learned Representation-Guided Diffusion Models for Large-Image Generation</papertitle>
-              </a>
-              <br>
-              <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>, <strong>Srikar Yellapragada*</strong>,
-              <a href="https://minhquanlecs.github.io/">Minh-Quan Le</a>, <a
-                href="https://saarthak-kapse.github.io/">Saarthak Kapse</a> , <a
-                href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a> , <a
-                href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>, <a
-                href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>CVPR</em>, 2024
-              <br>
-              <a
-                href="https://openaccess.thecvf.com/content/CVPR2024/papers/Graikos_Learned_Representation-Guided_Diffusion_Models_for_Large-Image_Generation_CVPR_2024_paper.pdf">Paper</a>
-              /
-              <a href="https://histodiffusion.github.io/docs/publications/large_image/">Project Page</a> /
-              <a href="https://github.com/cvlab-stonybrook/Large-Image-Diffusion">Code</a>
-              <p>We condition latent diffusion models with SSL embeddings and generate large images in histopathology
-                and satellite imagery.</p>
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/large_img.png"><img src="images/large_img.png" alt="LRDM"
+            loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2312.07330">Learned Representation-Guided Diffusion
+              Models for Large-Image Generation</a></h3>
+          <p class="pub-authors">
+            <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>, <strong>Srikar Yellapragada*</strong>,
+            <a href="https://minhquanlecs.github.io/">Minh-Quan Le</a>,
+            <a href="https://saarthak-kapse.github.io/">Saarthak Kapse</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">CVPR 2024</span></p>
+          <p class="pub-tldr">We condition latent diffusion models with SSL embeddings and generate large images in
+            histopathology and satellite imagery.</p>
+          <div class="pub-links">
+            <a
+              href="https://openaccess.thecvf.com/content/CVPR2024/papers/Graikos_Learned_Representation-Guided_Diffusion_Models_for_Large-Image_Generation_CVPR_2024_paper.pdf">Paper</a>
+            <a href="https://histodiffusion.github.io/docs/publications/large_image/">Project Page</a>
+            <a href="https://github.com/cvlab-stonybrook/Large-Image-Diffusion">Code</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/eccv.png">
-                <img src="images/eccv.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2407.14709">
-                <papertitle>∞-Brush: Controllable Large Image Synthesis with Diffusion Models in Infinite Dimensions
-                </papertitle>
-              </a>
-              <br>
-              <a href="https://minhquanlecs.github.io/">Minh-Quan Le*</a> , <a
-                href="https://alexgraikos.github.io/">Alexandros Graikos*</a> , <strong>Srikar Yellapragada</strong>, <a
-                href="https://www.linkedin.com/in/rajarsi-gupta-md-phd-951478245">Rajarsi Gupta</a> , <a
-                href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a> ,
-              <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>ECCV</em>, 2024
-              <br>
-              <a href="https://arxiv.org/abs/2407.14709">Paper</a> /
-              <a href="https://histodiffusion.github.io/docs/publications/infty_brush/">Project Page</a> /
-              <p>We introduce the first conditional diffusion model in functional space.</p>
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/pathldm.png"><img src="images/pathldm.png" alt="PathLDM" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2309.00748">PathLDM: Text Conditioned Latent Diffusion
+              Model for Histopathology</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada*</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc">Tahsin Kurc</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">WACV 2024</span></p>
+          <p class="pub-tldr">We build a text-conditioned LDM for histopathology using GPT-summarized text reports and
+            CLIP embeddings.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2309.00748.pdf">Paper</a>
+            <a href="https://histodiffusion.github.io/docs/publications/pathldm/">Project Page</a>
+            <a href="https://github.com/cvlab-stonybrook/PathLDM">Code</a>
+          </div>
+        </div>
+      </article>
 
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/gensis.png"><img src="images/gensis.png" alt="Gen-SIS" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2412.01672">Gen-SIS: Generative Self-augmentation
+              Improves Self-supervised Learning</a></h3>
+          <p class="pub-authors">
+            <a href="https://varunbelagali98.github.io/">Varun Belagali*</a>, <strong>Srikar Yellapragada*</strong>,
+            <a href="https://alexgraikos.github.io/">Alexandros Graikos</a>,
+            <a href="https://saarthak-kapse.github.io/">Saarthak Kapse</a>,
+            <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
+            <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
+            <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">CVPR Workshops (DataCV) 2026</span><span class="award">Best Paper
+              Award</span></p>
+          <p class="pub-tldr">Diffusion-generated views of an image, conditioned on its own SSL embedding, improve
+            self-supervised learning.</p>
+          <div class="pub-links">
+            <a
+              href="https://openaccess.thecvf.com/content/CVPR2026W/DataCV/html/Belagali_Gen-SIS_Generative_Self-augmentation_Improves_Self-supervised_Learning_CVPRW_2026_paper.html">Paper</a>
+            <a href="https://arxiv.org/abs/2412.01672">arXiv</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/pathldm.png">
-                <img src="images/pathldm.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2309.00748">
-                <papertitle>PathLDM: Text Conditioned Latent Diffusion Model for Histopathology</papertitle>
-              </a>
-              <br>
-              <strong>Srikar Yellapragada*</strong>, <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>,
-              <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>, <a
-                href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc">Tahsin Kurc</a>, <a
-                href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
-              <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>WACV</em>, 2024
-              <br>
-              <a href="https://arxiv.org/pdf/2309.00748.pdf">Paper</a> /
-              <a href="https://histodiffusion.github.io/docs/publications/pathldm/">Project Page</a> /
-              <a href="https://github.com/cvlab-stonybrook/PathLDM">Code</a>
-              <p>We build a text-conditioned LDM for histopathology using GPT-summarized text reports and CLIP
-                embeddings.</p>
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/ae_compression.png"><img src="images/ae_compression.png"
+            alt="Pathology image compression" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2503.11591">Pathology Image Compression with Pre-trained
+              Autoencoders</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada</strong>,
+            <a href="https://alexgraikos.github.io/">Alexandros Graikos</a>,
+            <a href="https://kostino.github.io/">Kostas Triaridis</a>,
+            <a href="https://zilinghan.github.io/">Zilinghan Li</a>,
+            <a href="https://www.linkedin.com/in/tarak-n-nandi-4609881a/">Tarak Nath Nandi</a>,
+            <a href="https://www.anl.gov/profile/ravi-k-madduri">Ravi Madduri</a>,
+            <a href="https://you.stonybrook.edu/imaginelab/">Prateek Prasanna</a>,
+            <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz">Joel Saltz</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
+          </p>
+          <p class="pub-venue"><span class="venue">MICCAI 2025</span></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2503.11591">Paper</a>
+            <a
+              href="https://huggingface.co/collections/StonyBrook-CVLab/pathology-fine-tuned-aes-67d45f223a659ff2e3402dd0">Models</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/diff_cond.png">
-                <img src="images/diff_cond.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2306.01900">
-                <papertitle>Conditional Generation from Unconditional Diffusion Models using Denoiser Representations
-                </papertitle>
-              </a>
-              <br>
-              <a href="https://alexgraikos.github.io/">Alexandros Graikos*</a>, <strong>Srikar Yellapragada*</strong>,
-              <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>
-              <br>
-              <em>BMVC</em>, 2023
-              <br>
-              <a href="https://papers.bmvc2023.org/0478.pdf">Paper</a> /
-              <a href="https://github.com/cvlab-stonybrook/fewshot-conditional-diffusion">Code</a> /
-              <a href="https://bmvc2022.mpi-inf.mpg.de/BMVC2023/0478_poster.pdf">Poster</a>
-              <p>We condition unconditional models in limited data scenarios using an auxiliary network built upon
-                denoiser representations.</p>
-            </td>
-          </tr>
+      <!-- Publication -->
+      <article class="pub">
+        <a class="pub-thumb" href="images/icassp.png"><img src="images/icassp.png" alt="ViT registers"
+            loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2501.04784">Leveraging Registers in Vision Transformers
+              for Robust Adaptation</a></h3>
+          <p class="pub-authors">
+            <strong>Srikar Yellapragada</strong>, <a href="https://kowshikthopalli.github.io/">Kowshik Thopalli</a>,
+            <a href="https://vivsivaraman.github.io/">Vivek Narayanaswamy</a>,
+            <a href="https://www.linkedin.com/in/wesamsakla">Wesam Sakla</a>, Yang Liu,
+            <a href="https://www.linkedin.com/in/yamen-mubarka/">Yamen Mubarka</a>,
+            <a href="https://www3.cs.stonybrook.edu/~samaras/">Dimitris Samaras</a>,
+            <a href="https://jjthiagarajan.com/">Jayaraman J. Thiagarajan</a>
+          </p>
+          <p class="pub-venue"><span class="venue">ICASSP 2025</span></p>
+          <p class="pub-tldr">Registers make ViTs robust.</p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2501.04784">Paper</a>
+          </div>
+        </div>
+      </article>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/thesis.png">
-                <img src="images/thesis.png" class="img_pub">
-              </a>
-              <a href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf">
-                <papertitle>Are the Proposed Similarity Metrics Also a Measure of Functional Similarity?</papertitle>
-              </a>
-              <br>
-              <strong>Manikanta Srikar Yellapragada</strong>
-              <br>
-              <em>Master's Thesis</em>, 2020
-              <br>
-              <a href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf">Paper</a>
-              <p>Short answer: NO.<br>Existing representation similarity metrics cannot fully capture the output
-                (functional) similarity of a neural network.</p>
-            </td>
-          </tr>
+      <h3 class="subhead">Collaborations</h3>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-title">PixCell-Text: Adapting a Pathology Image Prior for Text Conditioning</span>
+          <span class="pub-authors">Elena Gensch, Alexandros Graikos, <strong>Srikar Yellapragada</strong>, Saber
+            Pourheydari, Kostas Triaridis, Ravi Madduri, Joel Saltz, Dimitris Samaras</span>
+          <span class="pub-meta"><span class="venue">ECCV Workshops (MedFMB) 2026</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://openreview.net/forum?id=7XIymKIA0v">CDG-MAE: Cross-view Masked Modeling
+            using Diffusion Generated Views</a>
+          <span class="pub-authors">Varun Belagali, Pierre Marza, <strong>Srikar Yellapragada</strong>, Zilinghan Li,
+            Tarak Nath Nandi, Ravi Madduri, Joel Saltz, Stergios Christodoulidis, Maria Vakalopoulou, Dimitris
+            Samaras</span>
+          <span class="pub-meta"><span class="venue">TMLR 2026</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2512.21331">TICON: A Slide-Level Tile Contextualizer for
+            Histopathology Representation Learning</a>
+          <span class="pub-authors">Varun Belagali, Saarthak Kapse, Pierre Marza, Srijan Das, Zilinghan Li, Sofiène
+            Boutaj, Pushpak Pati, <strong>Srikar Yellapragada</strong>, Tarak Nath Nandi, Ravi Madduri, Joel Saltz,
+            Prateek Prasanna, Stergios Christodoulidis, Maria Vakalopoulou, Dimitris Samaras</span>
+          <span class="pub-meta"><span class="venue">CVPR Findings 2026</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2504.01009">GECKO: Gigapixel Vision-Concept Contrastive
+            Pretraining in Histopathology</a>
+          <span class="pub-authors">Saarthak Kapse, Pushpak Pati, <strong>Srikar Yellapragada</strong>, Srijan Das,
+            Rajarsi Gupta, Joel Saltz, Dimitris Samaras, Prateek Prasanna</span>
+          <span class="pub-meta"><span class="venue">ICCV 2025</span>
+            <a href="https://github.com/bmi-imaginelab/GECKO">Code</a></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2504.06950">PathSegDiff: Pathology Segmentation using
+            Diffusion Model Representations</a>
+          <span class="pub-authors">Sachin Kumar Danisetty, Alexandros Graikos, <strong>Srikar Yellapragada</strong>,
+            Dimitris Samaras</span>
+          <span class="pub-meta"><span class="venue">MICCAI Workshops (DGM4MICCAI) 2025</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2407.14709">∞-Brush: Controllable Large Image Synthesis
+            with Diffusion Models in Infinite Dimensions</a>
+          <span class="pub-authors">Minh-Quan Le*, Alexandros Graikos*, <strong>Srikar Yellapragada</strong>, Rajarsi
+            Gupta, Joel Saltz, Dimitris Samaras</span>
+          <span class="pub-meta"><span class="venue">ECCV 2024</span>
+            <a href="https://histodiffusion.github.io/docs/publications/infty_brush/">Project Page</a></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2306.01900">Conditional Generation from Unconditional
+            Diffusion Models using Denoiser Representations</a>
+          <span class="pub-authors">Alexandros Graikos*, <strong>Srikar Yellapragada*</strong>, Dimitris
+            Samaras</span>
+          <span class="pub-meta"><span class="venue">BMVC 2023</span>
+            <a href="https://github.com/cvlab-stonybrook/fewshot-conditional-diffusion">Code</a>
+            <a href="https://bmvc2022.mpi-inf.mpg.de/BMVC2023/0478_poster.pdf">Poster</a></span>
+        </li>
+      </ul>
 
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/isbi.png">
-                <img src="images/isbi.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/2004.01648">
-                <papertitle>Deep Learning Based Detection of Acute Aortic Syndrome in Contrast CT Images</papertitle>
-              </a>
-              <br>
-              <strong>Manikanta Srikar Yellapragada</strong>, Yiting Xie, Benedikt Graf, David Richmond, Arun Krishnan,
-              Arkadiusz Sitek
-              <br>
-              <em>ISBI</em>, 2020
-              <br>
-              <a href="https://arxiv.org/pdf/2004.01648.pdf">Paper</a>
-            </td>
-          </tr>
-
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/midl.png">
-                <img src="images/midl.png" class="img_pub">
-              </a>
-              <a href="http://proceedings.mlr.press/v121/shi20a/shi20a.pdf">
-                <papertitle>Automatic Diagnosis of Pulmonary Embolism Using an Attention-Guided Framework: A Large-Scale
-                  Study</papertitle>
-              </a>
-              <br>
-              Luyao Shi, Deepta Rajan, Shafiq Abedin, <strong>Manikanta Srikar Yellapragada</strong>, David Beymer,
-              Ehsan Dehghan
-              <br>
-              <em>MIDL</em>, 2020
-              <br>
-              <a href="http://proceedings.mlr.press/v121/shi20a/shi20a.pdf">Paper</a>
-            </td>
-          </tr>
-
-          <!-- Publication  -->
-          <tr>
-            <td style="padding:10px; width:100%; vertical-align:middle;">
-              <a href="images/icip.png">
-                <img src="images/icip.png" class="img_pub">
-              </a>
-              <a href="https://arxiv.org/abs/1711.07245">
-                <papertitle>Optical Character Recognition (OCR) for Telugu: Database, Algorithm and Application
-                </papertitle>
-              </a>
-              <br>
-              Konkimalla Chandra Prakash, <strong>Y.M.Srikar</strong>, Gayam Trishal, Souraj Mandal, Sumohana S.
-              Channappayya
-              <br>
-              <em>ICIP</em>, 2018
-              <br>
-              <a href="https://arxiv.org/pdf/1711.07245.pdf">Paper</a> /
-              <a href="https://github.com/srikarym/OCR_Telugu_code">Code</a>
-            </td>
-          </tr>
-
-        </tbody>
-      </table>
-
+      <h3 class="subhead">Before PhD</h3>
+      <ul class="pub-list">
+        <li>
+          <a class="pub-title"
+            href="https://cs.nyu.edu/media/publications/Yellapragada__Manikanta_Srikar_-_MS_Thesis.pdf">Are the
+            Proposed Similarity Metrics Also a Measure of Functional Similarity?</a>
+          <span class="pub-authors"><strong>Manikanta Srikar Yellapragada</strong></span>
+          <span class="pub-meta"><span class="venue">Master's Thesis, NYU 2020</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2004.01648">Deep Learning Based Detection of Acute Aortic
+            Syndrome in Contrast CT Images</a>
+          <span class="pub-authors"><strong>Manikanta Srikar Yellapragada</strong>, Yiting Xie, Benedikt Graf, David
+            Richmond, Arun Krishnan, Arkadiusz Sitek</span>
+          <span class="pub-meta"><span class="venue">ISBI 2020</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="http://proceedings.mlr.press/v121/shi20a/shi20a.pdf">Automatic Diagnosis of
+            Pulmonary Embolism Using an Attention-Guided Framework: A Large-Scale Study</a>
+          <span class="pub-authors">Luyao Shi, Deepta Rajan, Shafiq Abedin, <strong>Manikanta Srikar
+              Yellapragada</strong>, David Beymer, Ehsan Dehghan</span>
+          <span class="pub-meta"><span class="venue">MIDL 2020</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/1711.07245">Optical Character Recognition (OCR) for Telugu:
+            Database, Algorithm and Application</a>
+          <span class="pub-authors">Konkimalla Chandra Prakash, <strong>Y.M.Srikar</strong>, Gayam Trishal, Souraj
+            Mandal, Sumohana S. Channappayya</span>
+          <span class="pub-meta"><span class="venue">ICIP 2018</span>
+            <a href="https://github.com/srikarym/OCR_Telugu_code">Code</a></span>
+        </li>
+      </ul>
     </section>
-
   </main>
 
   <footer>
-    <p style="text-align:right;font-size:small;">
-      <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Credits</a>
-      <br>
-    </p>
+    <p>Last updated October 2026 &middot; Originally based on <a href="https://jonbarron.info/" target="_blank"
+        rel="noopener noreferrer">Jon Barron's template</a></p>
   </footer>
 </body>
 
