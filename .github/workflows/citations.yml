@@ -1,0 +1,45 @@
+name: Update citation counts
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # every Monday, 06:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_citations.py
+      - .github/workflows/citations.yml
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch counts from Google Scholar
+        run: python3 scripts/update_citations.py
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          if git diff --quiet citations.js; then
+            echo "No change in citation counts."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "Update citation counts"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Pushes made with GITHUB_TOKEN may not trigger a Pages rebuild, so request one.
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true

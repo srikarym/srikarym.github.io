@@ -475,3 +475,47 @@ footer a {
   color: var(--muted);
   padding: 2px 0;
 }
+
+/* Google Scholar citation badge */
+.pub-links a.scholar-badge,
+.scholar-badge {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.scholar-badge .sb-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+}
+
+.scholar-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: #4285f4;
+}
+
+.scholar-badge .sb-count {
+  padding: 1px 8px;
+  background: #4285f4;
+  color: #ffffff;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-links a.scholar-badge:hover,
+.scholar-badge:hover {
+  border-color: #4285f4;
+  color: var(--text);
+  text-decoration: none;
+}
